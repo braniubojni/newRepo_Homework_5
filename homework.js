@@ -23,6 +23,19 @@
 	console.log(a);
 	console.log(b);
 }
+// N2
+{
+	const range2 = (x,y) => {
+	let arr = [];
+	if(y - x === 2 ){
+		return [x+1]
+	} else {
+		arr = range2(x,y-1)
+		arr.push(y-1)
+		return arr;
+	}
+}
+}
 // N3
 {
 	const mapRange2 = (arr,x,y) => {
